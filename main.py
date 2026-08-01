@@ -29,8 +29,7 @@ class Task(BaseModel):
 
 class TaskResponse(Task):
     id: int
-    class Config:
-        from_attributes = True
+    model_config = {"from_attributes": True}
 
 # ---------- Auth helper ----------
 def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
