@@ -1,0 +1,26 @@
+
+echo "Starting Task Tracker..."
+
+# Backend
+osascript <<EOF
+tell application "Terminal"
+    do script "cd $PROJECT && source venv/bin/activate && uvicorn main:app --reload"
+end tell
+EOF
+
+sleep 3
+
+# Frontend
+osascript <<EOF
+tell application "Terminal"
+    do script "cd $PROJECT/frontend && npm run dev"
+end tell
+EOF
+
+sleep 2
+
+open http://localhost:5173
+open http://127.0.0.1:8000/docs
+
+echo "Task Tracker started."
+
