@@ -32,7 +32,7 @@ A full-stack task management application with user authentication, built with Fa
 
 ## Tech Stack
 
-**Backend:** FastAPI, SQLAlchemy, SQLite, JWT (python-jose), bcrypt (passlib)
+**Backend:** FastAPI, SQLAlchemy, PostgreSQL (SQLite for local dev), JWT (python-jose), bcrypt (passlib)
 **Frontend:** React (Vite)
 **Testing:** pytest
 **CI/CD:** GitHub Actions
