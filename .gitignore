@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .pytest_cache/
 *.db
+.DS_Store
+logs/
+releases/
+*.save
