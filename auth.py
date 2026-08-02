@@ -1,8 +1,12 @@
+import os
 from datetime import datetime, timedelta, timezone
 from jose import jwt
 from passlib.context import CryptContext
+from dotenv import load_dotenv
 
-SECRET_KEY = "dev-secret-key-change-this-in-real-production"
+load_dotenv()
+
+SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret-key-change-this-in-real-production")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
