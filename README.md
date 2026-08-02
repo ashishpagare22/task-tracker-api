@@ -131,9 +131,15 @@ python -m pytest -v
 | DELETE | `/tasks/{id}` | Delete a task | Yes |
 
 ### Example: Filtering tasks
+## Deployment
+
+- **Frontend:** Vercel (custom domain via DuckDNS)
+- **Backend:** Render
+- **Database:** Supabase (PostgreSQL)
+- **Config:** `SECRET_KEY` and `DATABASE_URL` are read from environment variables in production; local development falls back to SQLite and a dev-only secret key via a `.env` file (gitignored)
+
 ## Notes
 
-This is a learning/portfolio project. A few simplifications worth knowing:
-- JWT secret key is hardcoded in `auth.py` — in production this should come from an environment variable
-- Uses SQLite for simplicity — a production app would likely use PostgreSQL
-- Not deployed to a live cloud environment — runs locally only
+This is a learning/portfolio project. A few things worth knowing:
+- Free-tier hosting means the backend may spin down after inactivity, causing a slower first request
+- No rate limiting or advanced security hardening beyond JWT auth and password hashing
