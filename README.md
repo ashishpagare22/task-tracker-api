@@ -1,6 +1,23 @@
 # Task Tracker API
 
-A full-stack task management application with user authentication, built with FastAPI, SQLAlchemy, SQLite, and a React frontend.
+A full-stack task management application with user authentication, built with FastAPI, SQLAlchemy, PostgreSQL, and a React frontend.
+
+## 🚀 Live Demo
+
+**App:** [https://yourtasktracker.duckdns.org](https://yourtasktracker.duckdns.org)
+**API Docs:** [https://task-tracker-api-2p0j.onrender.com/docs](https://task-tracker-api-2p0j.onrender.com/docs)
+
+> Note: the backend is on a free tier and may take 10-30 seconds to wake up on the first request after a period of inactivity.
+
+## Screenshots
+
+<p align="center">
+  <img src="images/login-screen.png" width="400" alt="Login screen" />
+  <img src="images/task-list.png" width="400" alt="Task list with priorities" />
+</p>
+<p align="center">
+  <img src="images/signup-validation.png" width="400" alt="Signup with validation" />
+</p>
 
 ## Features
 
